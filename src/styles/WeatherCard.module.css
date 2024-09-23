@@ -1,0 +1,29 @@
+.weatherCard {
+    width: 20rem;
+    height: 20rem;
+    perspective: 1000px;
+  }
+  
+  .innerCard {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .weatherCard:hover .innerCard {
+    transform: rotateY(180deg);
+  }
+  
+  .front,
+  .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  
+  .back {
+    transform: rotateY(180deg);
+  }
+  

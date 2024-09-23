@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-morning {
+  background: linear-gradient(to bottom, #6DD5ED, #2B86C5); /* Top to bottom gradient */
+}
+
+.bg-day {
+  background: linear-gradient(to bottom, #FFC371, #FF5F6D); /* Top to bottom gradient */
+}
+
+.bg-evening {
+  background: linear-gradient(to bottom, #FF7E5F, #FEB47B); /* Top to bottom gradient */
+}
+
+.bg-night {
+  background: linear-gradient(to bottom, #1E3C72, #2A5298); /* Top to bottom gradient */
+}
+
+.star {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.8); /* Slight transparency */
+  border-radius: 50%;
+  animation: twinkleStars 2s infinite ease-in-out;
+}
+
+.cloud {
+  position: absolute;
+  background-image: url('/assets/cloud.png'); /* Image of a cloud */
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation: moveClouds 30s linear infinite;
+}
+
+.cloud-small {
+  width: 100px;
+  height: 50px;
+  top: 20px;
+  left: 20px;
+}
+
+.cloud-large {
+  width: 200px;
+  height: 100px;
+  top: 50px;
+  left: 100px;
+}
